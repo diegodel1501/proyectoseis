@@ -13,6 +13,7 @@ public class ProductoModel {
 private EntityManager entityManager;
 	
 
+	@SuppressWarnings("unchecked")
 	public List<Producto> findAll(){
 		
 		return entityManager.createQuery("From Producto").getResultList();

@@ -1,3 +1,2 @@
-insert into producto (id, nombre, precio, fecha) values (1,"diego",1000,"2018-12-03");
-insert into producto (id, nombre, precio, fecha) values (2,"dieg",2000,"2018-12-03");
-insert into producto (id, nombre, precio, fecha) values (3,"die",3000,"2018-12-03");
+INSERT INTO `expositor` (`id_expositor`, `correo`, `fono`, `nombre`, `sexo`) VALUES ('1', 'duegix', '98743892', 'diego', 'm');
+INSERT INTO `producto` (`id_producto`, `fecha`, `nombre`, `precio`) VALUES ('1', '12-09-27', 'camiseta', '300');

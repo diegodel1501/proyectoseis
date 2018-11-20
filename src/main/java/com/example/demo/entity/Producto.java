@@ -13,16 +13,16 @@ import javax.persistence.Table;
 public class Producto {
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
-private Long id;
+private Long idProducto;
 private String nombre;
 private Long precio;
 private Date fecha;
 
-public Long getId() {
-	return id;
+public Long getIdProducto() {
+	return idProducto;
 }
-public void setId(Long id) {
-	this.id = id;
+public void setIdProducto(Long id) {
+	this.idProducto = id;
 }
 public String getNombre() {
 	return nombre;
