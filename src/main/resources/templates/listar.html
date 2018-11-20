@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th=http://www.thymeleaf.org>
+<head>
+<meta charset="ISO-8859-1">
+<title>listado de productos</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<table class= table >
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Precio</th>
+			<th>Fecha</th>
+			
+		</tr>
+		<tr th:each="producto: ${productos}">
+		<td th:text="${producto.id}"></td>
+		<td th:text="${producto.nombre}"></td>
+		<td th:text="${producto.precio}"></td>
+		<td th:text="${producto.fecha}"></td>
+		</tr>
+	</table>
+</body>
+</html>
