@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th=http://www.thymeleaf.org>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>listado ponencias</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<table class= table >
+		<tr>
+			<th>idponencia</th>
+			<th>idexpositor</th>
+			<th>Nombre</th>
+			<th>Inicio</th>
+			<th>Termino</th>
+			
+		</tr>
+		<tr th:each="ponencia: ${ponencias}">
+		<td th:text="${ponencia.idPonencia}"></td>
+		<td th:text="${ponencia.idexpocitor}"></td>
+		<td th:text="${ponencia.nombre}"></td>
+		<td th:text="${ponencia.horaInicio}"></td>
+		<td th:text="${ponencia.horaTermino}"></td>
+		</tr>
+	</table>
+
+</body>
+</html>

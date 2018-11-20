@@ -1,2 +1,4 @@
 INSERT INTO `expositor` (`id_expositor`, `correo`, `fono`, `nombre`, `sexo`) VALUES ('1', 'duegix', '98743892', 'diego', 'm');
 INSERT INTO `producto` (`id_producto`, `fecha`, `nombre`, `precio`) VALUES ('1', '12-09-27', 'camiseta', '300');
+INSERT INTO `ponencia` (`id_ponencia`, `hora_inicio`, `hora_termino`, `id_cat_ponencia`, `idexpocitor`, `nombre`) VALUES ('1', '14:00:00', '16:15:00', '1', '1', 'ponenciaDemessi');
+INSERT INTO `ponencia` (`id_ponencia`, `hora_inicio`, `hora_termino`, `id_cat_ponencia`, `idexpocitor`, `nombre`) VALUES ('2', '11:15:00', '17:30:00', '1', '2', 'ponenciaLarga');
